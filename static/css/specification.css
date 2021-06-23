@@ -1,0 +1,76 @@
+.spec {
+  padding-top: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (min-max(300px, 2fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, min-max(300px, 2fr));
+  grid-gap: 5rem;
+      grid-template-areas: "box1" "box2" "box3";
+  width: 70%;
+  margin: auto;
+  justify-items: center;
+}
+
+.spec1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: box1;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border: solid yellow 2px;
+  -webkit-box-shadow: yellow 3px 2px 3px 4px;
+          box-shadow: yellow 3px 2px 3px 4px;
+  text-align: center;
+}
+
+.spec2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: box2;
+}
+
+.spec3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: box3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.spec-content p {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.spec-logo {
+  height: 2rem;
+  width: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+}
+
+.video-loop {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -2;
+  width: 50%;
+  margin: auto;
+  height: 100vh;
+  padding-top: 2rem;
+  opacity: 30%;
+}
+/*# sourceMappingURL=specification.css.map */

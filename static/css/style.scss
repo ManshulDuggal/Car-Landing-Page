@@ -1,0 +1,92 @@
+//secondryColor = yellow
+//primaryColor =white
+@import './color.scss';
+@import './specification.scss';
+@import './head.scss';
+* {
+    padding: 0rem;
+    margin: 0rem;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: Regular 400;
+
+}
+
+// body {
+
+
+   
+// }
+
+header {
+    position: sticky;
+    overflow: visible;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 12vh;
+    align-items: center;
+
+}
+
+.logo-container {
+
+    display: flex;
+    flex: 1;
+}
+
+.logo {
+    height: 60px;
+    width: 40px;
+}
+
+li a {
+    text-decoration: none;
+    color:#000
+    
+}
+
+
+li a:hover {
+    color: $secondryColor;
+    text-shadow: black -1px 1px 8px;
+
+}
+
+
+
+.nav-items {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+
+nav {
+
+    flex: 1;
+}
+
+.intro{
+    height: 100vh;
+    background-image: url("/static/Images/back2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.intro-text h1 {
+    padding: 2rem;
+    margin-top: .5rem;
+    text-align: center;
+    color: $secondryColor;
+    text-shadow: black 2px 2px 9px;
+}
+
+.intro-text p {
+    color: $primaryColor;
+    text-align: center;
+    text-shadow: black 2px 2px 9px;
+}
+
